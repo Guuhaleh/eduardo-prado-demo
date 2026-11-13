@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Eduardo Prado | Compositor</title>
+<meta name="description" content="Músicas autorais pra sua voz gravar. Duplas, produtores e estúdios: ouça e fale com o compositor Eduardo Prado.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root { --dark:#15100B; --panel:#211A12; --gold:#C9A36A; --cream:#F4EAD8; --ink:#1B1510; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Inter',sans-serif; background:var(--dark); color:var(--cream); line-height:1.5; -webkit-font-smoothing:antialiased; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:720px; margin:0 auto; padding:0 24px; }
+  .demo { background:var(--gold); color:var(--dark); text-align:center; font-size:12px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; padding:9px 16px; }
+  .kicker { font-size:12px; font-weight:800; letter-spacing:0.3em; text-transform:uppercase; color:var(--gold); }
+  .regua { width:56px; height:3px; background:var(--gold); margin:16px 0 22px; }
+  /* hero */
+  .hero { padding:72px 0 56px; background:radial-gradient(circle at 85% 10%, rgba(201,163,106,0.22), transparent 50%); }
+  h1 { font-size:clamp(52px,14vw,92px); font-weight:900; line-height:0.98; letter-spacing:-0.04em; }
+  .lead { margin-top:22px; font-size:20px; font-weight:500; opacity:0.85; max-width:480px; }
+  .botoes { margin-top:34px; display:flex; flex-direction:column; gap:12px; max-width:420px; }
+  .btn { display:flex; align-items:center; justify-content:center; padding:17px 22px; border-radius:12px; font-size:16px; font-weight:700; letter-spacing:0.02em; transition:transform .15s, background .15s; }
+  .btn:hover { transform:translateY(-2px); }
+  .btn.pri { background:var(--gold); color:var(--dark); }
+  .btn.sec { border:1.5px solid rgba(244,234,216,0.35); }
+  .btn.sec:hover { border-color:var(--gold); }
+  /* seções */
+  section { padding:56px 0; border-top:1px solid rgba(244,234,216,0.1); }
+  h2 { font-size:clamp(32px,8vw,44px); font-weight:800; line-height:1.06; letter-spacing:-0.035em; }
+  .sub { margin-top:14px; font-size:18px; opacity:0.75; max-width:520px; }
+  .musicas { margin-top:30px; }
+  .musica { display:flex; align-items:center; gap:16px; padding:18px 0; border-top:1px solid rgba(244,234,216,0.12); }
+  .musica:last-child { border-bottom:1px solid rgba(244,234,216,0.12); }
+  .num { font-size:14px; font-weight:800; color:var(--gold); width:28px; }
+  .musica .nome { font-size:20px; font-weight:700; letter-spacing:-0.01em; flex:1; }
+  .musica .tipo { font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; opacity:0.5; }
+  .ouvir { font-size:13px; font-weight:800; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); border:1.5px solid rgba(201,163,106,0.5); padding:9px 14px; border-radius:999px; }
+  .ouvir:hover { background:var(--gold); color:var(--dark); }
+  .cards { margin-top:28px; display:grid; gap:14px; }
+  .card { background:var(--panel); border-radius:16px; padding:24px 26px; }
+  .card .t { font-size:12px; font-weight:800; letter-spacing:0.24em; text-transform:uppercase; color:var(--gold); margin-bottom:8px; }
+  .card p { font-size:18px; font-weight:500; }
+  .passos { margin-top:26px; counter-reset:p; display:grid; gap:16px; }
+  .passo { display:flex; gap:18px; align-items:flex-start; }
+  .passo::before { counter-increment:p; content:counter(p); flex:0 0 38px; height:38px; border-radius:50%; background:var(--gold); color:var(--dark); font-weight:900; display:flex; align-items:center; justify-content:center; }
+  .passo p { font-size:18px; font-weight:500; padding-top:5px; }
+  .contato { background:var(--cream); color:var(--ink); border-radius:20px; padding:36px 28px; margin-top:6px; }
+  .contato .kicker { color:#8A6A38; }
+  .contato h2 { margin-top:10px; }
+  .contato .linhas { margin-top:22px; display:grid; gap:10px; font-size:18px; font-weight:600; }
+  .contato .linhas span { opacity:0.6; font-size:12px; letter-spacing:0.18em; text-transform:uppercase; font-weight:800; display:block; }
+  .pend { background:rgba(138,106,56,0.16); border-radius:6px; padding:1px 8px; }
+  .contato .btn.pri { background:var(--ink); color:var(--cream); margin-top:22px; }
+  footer { padding:34px 0 50px; font-size:13px; opacity:0.5; text-align:center; letter-spacing:0.06em; }
+</style>
+</head>
+<body>
+
+<div class="demo">Versão de demonstração · contatos e links a confirmar</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">Compositor</div>
+    <div class="regua"></div>
+    <h1>Eduardo<br>Prado</h1>
+    <p class="lead">Músicas autorais pra sua voz gravar.</p>
+    <div class="botoes">
+      <a class="btn pri" href="#musicas">Ouvir as músicas</a>
+      <a class="btn sec" href="#contato">Falar com o compositor</a>
+    </div>
+  </div>
+</header>
+
+<section id="musicas">
+  <div class="wrap">
+    <div class="kicker">Músicas</div>
+    <div class="regua"></div>
+    <h2>Ouça e imagine na sua voz.</h2>
+    <p class="sub">Singles autorais já lançados. Se alguma fizer sentido pro seu projeto, é só chamar.</p>
+    <div class="musicas">
+      <div class="musica"><span class="num">01</span><span class="nome">Olha Eu Aqui</span><a class="ouvir" href="https://open.spotify.com/intl-pt/artist/2abndp8J53Dw9nAHsiFjJh">Ouvir</a></div>
+      <div class="musica"><span class="num">02</span><span class="nome">Recaída</span><a class="ouvir" href="https://open.spotify.com/intl-pt/artist/2abndp8J53Dw9nAHsiFjJh">Ouvir</a></div>
+      <div class="musica"><span class="num">03</span><span class="nome">Vidas Divididas</span><a class="ouvir" href="https://open.spotify.com/intl-pt/artist/2abndp8J53Dw9nAHsiFjJh">Ouvir</a></div>
+      <div class="musica"><span class="num">04</span><span class="nome">Mil Pedaços</span><a class="ouvir" href="https://open.spotify.com/intl-pt/artist/2abndp8J53Dw9nAHsiFjJh">Ouvir</a></div>
+      <div class="musica"><span class="num">05</span><span class="nome">Sete Chaves</span><a class="ouvir" href="https://open.spotify.com/intl-pt/artist/2abndp8J53Dw9nAHsiFjJh">Ouvir</a></div>
+      <div class="musica"><span class="num">06</span><span class="nome">Tá Maluca</span><a class="ouvir" href="https://open.spotify.com/intl-pt/artist/2abndp8J53Dw9nAHsiFjJh">Ouvir</a></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Pra quem compõe</div>
+    <div class="regua"></div>
+    <h2>Música pensada pra quem grava.</h2>
+    <div class="cards">
+      <div class="card"><div class="t">Duplas e cantores</div><p>Letras autorais pra encaixar na sua voz e no seu repertório.</p></div>
+      <div class="card"><div class="t">Produtores</div><p>Material novo pra quem está montando um projeto ou um álbum.</p></div>
+      <div class="card"><div class="t">Estúdios</div><p>Composições prontas pra seguir pra gravação.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Como funciona</div>
+    <div class="regua"></div>
+    <h2>Quer gravar uma música?</h2>
+    <div class="passos">
+      <div class="passo"><p>Ouça os singles e escolha o que combina com você.</p></div>
+      <div class="passo"><p>Chame no WhatsApp e conte o seu projeto.</p></div>
+      <div class="passo"><p>Receba a música e combine os detalhes direto com o compositor.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" style="border-top:none;">
+  <div class="wrap">
+    <div class="contato">
+      <div class="kicker">Contato</div>
+      <h2>Vamos conversar?</h2>
+      <div class="linhas">
+        <div><span>WhatsApp</span><b class="pend">[número a confirmar]</b></div>
+        <div><span>E-mail</span><b class="pend">[e-mail a confirmar]</b></div>
+        <div><span>Instagram</span><a href="https://www.instagram.com/compositoreduardoprado">@compositoreduardoprado</a></div>
+        <div><span>Cidade</span>Monte Mor/SP</div>
+      </div>
+      <a class="btn pri" href="#">Chamar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>© Eduardo Prado · Compositor</footer>
+
+</body>
+</html>
